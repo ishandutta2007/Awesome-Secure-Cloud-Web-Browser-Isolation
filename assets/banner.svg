@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Card/Pill Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Accent Glow -->
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <!-- Shield Glow Gradient -->
+    <radialGradient id="shieldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes pulseGrid {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.35; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(-100px); }
+      100% { transform: translateY(320px); }
+    }
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(8px); }
+    }
+
+    .grid-lines { animation: pulseGrid 6s ease-in-out infinite; }
+    .scanner { animation: scanLine 8s linear infinite; }
+    .ring-rotate { transform-origin: 1050px 160px; animation: rotateRing 20s linear infinite; }
+    .particle { animation: floatParticle 4s ease-in-out infinite; }
+    
+    .title-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+  </style>
+
+  <!-- Dark Canvas -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGlow)"/>
+
+  <!-- Cyber Grid Pattern Background -->
+  <g class="grid-lines" stroke="#334155" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    
+    <line x1="150" y1="0" x2="150" y2="320"/>
+    <line x1="350" y1="0" x2="350" y2="320"/>
+    <line x1="550" y1="0" x2="550" y2="320"/>
+    <line x1="750" y1="0" x2="750" y2="320"/>
+    <line x1="950" y1="0" x2="950" y2="320"/>
+  </g>
+
+  <!-- Animated Scanning Beam in Background -->
+  <rect class="scanner" x="0" y="0" width="1200" height="40" fill="url(#shieldGlow)" opacity="0.5"/>
+
+  <!-- Background Decorative Shield Graphics (Right Side) -->
+  <g class="ring-rotate" opacity="0.3">
+    <circle cx="1050" cy="160" r="110" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10 15"/>
+    <circle cx="1050" cy="160" r="85" fill="none" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="6 8"/>
+  </g>
+  <circle cx="1050" cy="160" r="130" fill="url(#shieldGlow)"/>
+
+  <!-- Ambient Dynamic Floating Particles -->
+  <circle class="particle" cx="100" cy="80" r="3" fill="#38bdf8" opacity="0.6"/>
+  <circle class="particle" cx="280" cy="240" r="4" fill="#818cf8" opacity="0.5" style="animation-delay: 1s;"/>
+  <circle class="particle" cx="720" cy="70" r="3" fill="#c084fc" opacity="0.7" style="animation-delay: 2s;"/>
+
+  <!-- Accent Top Border -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentGlow)" rx="2"/>
+
+  <!-- FOREGROUND LAYER: Content Box, Clear & Legible Title & Subtitle -->
+  <!-- Tag Badge -->
+  <rect x="60" y="48" width="230" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="75" y="68" class="badge-text">🛡️ ZERO TRUST WEB ISOLATION</text>
+
+  <!-- Main Title -->
+  <text x="60" y="125" class="title-text">Awesome Secure Cloud Web Browser Isolation</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="165" class="subtitle-text">A Curated Ecosystem of Remote Browser Isolation (RBI), Enterprise Browsers &amp; Web Sandboxes</text>
+
+  <!-- Feature Pills Footer -->
+  <g transform="translate(60, 215)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="170" height="42" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="26" fill="#cbd5e1" font-family="system-ui" font-size="14" font-weight="600">🌐 Remote Rendering</text>
+
+    <!-- Pill 2 -->
+    <rect x="185" y="0" width="170" height="42" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="203" y="26" fill="#cbd5e1" font-family="system-ui" font-size="14" font-weight="600">🔒 Enterprise Browsers</text>
+
+    <!-- Pill 3 -->
+    <rect x="370" y="0" width="170" height="42" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="388" y="26" fill="#cbd5e1" font-family="system-ui" font-size="14" font-weight="600">⚡ Disposable Containers</text>
+
+    <!-- Pill 4 -->
+    <rect x="555" y="0" width="170" height="42" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="573" y="26" fill="#cbd5e1" font-family="system-ui" font-size="14" font-weight="600">📦 Open Source RBI</text>
+  </g>
+</svg>
