@@ -6,7 +6,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awssome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/badge.svg" alt="Awesome List"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Secure-Cloud-Web-Browser-Isolation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Secure-Cloud-Web-Browser-Isolation?style=flat" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Secure-Cloud-Web-Browser-Isolation/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Secure-Cloud-Web-Browser-Isolation?style=flat" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -65,9 +65,9 @@ Below is a curated summary of commercial Remote Browser Isolation (RBI) and Ente
 
 Open-source solutions empower organizations, security engineers, and home lab administrators to deploy self-hosted remote browser isolation infrastructure and ephemeral containerized browser environments.
 
-Entries below are sorted in **descending order by GitHub Star Count**.
+Entries below are sorted in **descending order by GitHub Stars_Count**.
 
-| Repository & Project | GitHub Star Count | License | Tech Stack | Core Highlights & Use Cases |
+| Repository & Project | GitHub Stars_Count | License | Tech Stack | Core Highlights & Use Cases |
 | :--- | :--- | :--- | :--- | :--- |
 | **[m1k1o/neko](https://github.com/m1k1o/neko)** 🐱 | <a href="https://github.com/m1k1o/neko/stargazers"><img src="https://img.shields.io/github/stars/m1k1o/neko?style=social&color=white" alt="m1k1o/neko stars"/></a> | Apache-2.0 | Go, WebRTC, Docker | **Self-hosted virtual browser running in Docker with WebRTC streaming**. Enables multi-user collaborative browser isolation, virtual room sharing, and interactive sandboxed browsing. |
 | **[browserless/browserless](https://github.com/browserless/browserless)** ⚡ | <a href="https://github.com/browserless/browserless/stargazers"><img src="https://img.shields.io/github/stars/browserless/browserless?style=social&color=white" alt="browserless stars"/></a> | SSPL-1.0 | Node.js, Puppeteer, Docker | **Headless Chrome remote browser automation & isolation server**. Runs isolated containerized browser sessions via WebSocket/CDP with resource caps and session management. |
